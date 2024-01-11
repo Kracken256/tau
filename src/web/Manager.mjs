@@ -28,7 +28,7 @@ class Manager {
     /**
      * Manager constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
+     * @param {App} app - The main view object for Tau.
      */
     constructor(app) {
         this.app = app;
@@ -139,7 +139,7 @@ class Manager {
         document.getElementById("load-delete-button").addEventListener("click", this.controls.loadDeleteClick.bind(this.controls));
         document.getElementById("load-name").addEventListener("change", this.controls.loadNameChange.bind(this.controls));
         document.getElementById("load-button").addEventListener("click", this.controls.loadButtonClick.bind(this.controls));
-        document.getElementById("support").addEventListener("click", this.controls.supportButtonClick.bind(this.controls));
+        // document.getElementById("support").addEventListener("click", this.controls.supportButtonClick.bind(this.controls));
         this.addMultiEventListeners("#save-texts textarea", "keyup paste", this.controls.saveTextChange, this.controls);
 
         // Operations
@@ -222,7 +222,7 @@ class Manager {
 
 
         // Options
-        document.getElementById("options").addEventListener("click", this.options.optionsClick.bind(this.options));
+        // document.getElementById("options").addEventListener("click", this.options.optionsClick.bind(this.options));
         document.getElementById("reset-options").addEventListener("click", this.options.resetOptionsClick.bind(this.options));
         this.addDynamicListener(".option-item input[type=checkbox]", "change", this.options.switchChange, this.options);
         this.addDynamicListener(".option-item input[type=checkbox]#wordWrap", "change", this.options.setWordWrap, this.options);

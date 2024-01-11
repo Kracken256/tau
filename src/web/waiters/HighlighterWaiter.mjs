@@ -8,15 +8,15 @@ import {EditorSelection} from "@codemirror/state";
 import {chrEncWidth} from "../../core/lib/ChrEnc.mjs";
 
 /**
- * Waiter to handle events related to highlighting in CyberChef.
+ * Waiter to handle events related to highlighting in Tau.
  */
 class HighlighterWaiter {
 
     /**
      * HighlighterWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Tau.
+     * @param {Manager} manager - The Tau event manager.
      */
     constructor(app, manager) {
         this.app = app;

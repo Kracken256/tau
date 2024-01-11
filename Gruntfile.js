@@ -33,7 +33,7 @@ module.exports = function (grunt) {
         ]);
 
     grunt.registerTask("node",
-        "Compiles CyberChef into a single NodeJS module.",
+        "Compiles Tau into a single NodeJS module.",
         [
             "clean:node", "clean:config", "clean:nodeConfig", "exec:generateConfig", "exec:generateNodeIndex"
         ]);
@@ -49,7 +49,7 @@ module.exports = function (grunt) {
         ["connect:prod", "exec:browserTests"]);
 
     grunt.registerTask("testnodeconsumer",
-        "A task which checks whether consuming CJS and ESM apps work with the CyberChef build",
+        "A task which checks whether consuming CJS and ESM apps work with the Tau build",
         ["exec:setupNodeConsumers", "exec:testCJSNodeConsumer", "exec:testESMNodeConsumer", "exec:teardownNodeConsumers"]);
 
     grunt.registerTask("default",
@@ -95,7 +95,7 @@ module.exports = function (grunt) {
             PKG_VERSION: JSON.stringify(pkg.version),
         },
         moduleEntryPoints = listEntryModules(),
-        nodeConsumerTestPath = "~/tmp-cyberchef",
+        nodeConsumerTestPath = "~/tmp-tau",
         /**
          * Configuration for Webpack production build. Defined as a function so that it
          * can be recalculated when new modules are generated.
@@ -186,7 +186,7 @@ module.exports = function (grunt) {
             node: ["build/node/*"],
             config: ["src/core/config/OperationConfig.json", "src/core/config/modules/*", "src/code/operations/index.mjs"],
             nodeConfig: ["src/node/index.mjs", "src/node/config/OperationConfig.json"],
-            standalone: ["build/prod/CyberChef*.html"]
+            standalone: ["build/prod/Tau*.html"]
         },
         eslint: {
             configs: ["*.{js,mjs}"],
@@ -241,7 +241,7 @@ module.exports = function (grunt) {
                     "!build/prod/index.html",
                     "!build/prod/BundleAnalyzerReport.html",
                 ],
-                dest: `build/prod/CyberChef_v${pkg.version}.zip`
+                dest: `build/prod/Tau_v${pkg.version}.zip`
             }
         },
         connect: {
@@ -285,7 +285,7 @@ module.exports = function (grunt) {
                     process: function (content, srcpath) {
                         if (srcpath.indexOf("index.html") >= 0) {
                             // Replace download link with version number
-                            content = content.replace(/<a [^>]+>Download CyberChef.+?<\/a>/,
+                            content = content.replace(/<a [^>]+>Download Tau.+?<\/a>/,
                                 `<span>Version ${pkg.version}</span>`);
 
                             return grunt.template.process(content, srcpath);
@@ -298,7 +298,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         src: ["build/prod/index.html"],
-                        dest: `build/prod/CyberChef_v${pkg.version}.html`
+                        dest: `build/prod/Tau_v${pkg.version}.html`
                     }
                 ]
             }
@@ -329,12 +329,12 @@ module.exports = function (grunt) {
                     switch (process.platform) {
                         case "darwin":
                             return chainCommands([
-                                `shasum -a 256 build/prod/CyberChef_v${pkg.version}.zip | awk '{print $1;}' > build/prod/sha256digest.txt`,
+                                `shasum -a 256 build/prod/Tau_v${pkg.version}.zip | awk '{print $1;}' > build/prod/sha256digest.txt`,
                                 `sed -i '' -e "s/DOWNLOAD_HASH_PLACEHOLDER/$(cat build/prod/sha256digest.txt)/" build/prod/index.html`
                             ]);
                         default:
                             return chainCommands([
-                                `sha256sum build/prod/CyberChef_v${pkg.version}.zip | awk '{print $1;}' > build/prod/sha256digest.txt`,
+                                `sha256sum build/prod/Tau_v${pkg.version}.zip | awk '{print $1;}' > build/prod/sha256digest.txt`,
                                 `sed -i -e "s/DOWNLOAD_HASH_PLACEHOLDER/$(cat build/prod/sha256digest.txt)/" build/prod/index.html`
                             ]);
                     }
@@ -382,7 +382,7 @@ module.exports = function (grunt) {
                     `mkdir ${nodeConsumerTestPath}`,
                     `cp tests/node/consumers/* ${nodeConsumerTestPath}`,
                     `cd ${nodeConsumerTestPath}`,
-                    "npm link cyberchef"
+                    "npm link tau"
                 ]),
                 sync: true
             },

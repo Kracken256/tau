@@ -3,7 +3,7 @@
  * 1.76
  * 2014-2016, Rudolf Nickolaev. All rights reserved.
  * 
- * Exported for CyberChef by mshwed [m@ttshwed.com]
+ * Exported for Tau by mshwed [m@ttshwed.com]
  */
 
 /*

@@ -13,7 +13,7 @@ const path = require("path");
  */
 
 const banner = `/**
- * CyberChef - The Cyber Swiss Army Knife
+ * Tau - The Cyber Swiss Army Knife
  *
  * @copyright Crown Copyright 2016
  * @license Apache-2.0

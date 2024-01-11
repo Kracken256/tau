@@ -8,15 +8,15 @@ import Utils from "../../core/Utils.mjs";
 
 
 /**
- * Waiter to handle events related to the CyberChef controls (i.e. Bake, Step, Save, Load etc.)
+ * Waiter to handle events related to the Tau controls (i.e. Bake, Step, Save, Load etc.)
  */
 class ControlsWaiter {
 
     /**
      * ControlsWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Tau.
+     * @param {Manager} manager - The Tau event manager.
      */
     constructor(app, manager) {
         this.app = app;
@@ -114,7 +114,7 @@ class ControlsWaiter {
      * @param {boolean} includeInput - Whether to include the input in the URL.
      * @param {string} input
      * @param {Object[]} [recipeConfig] - The recipe configuration object array.
-     * @param {string} [baseURL] - The CyberChef URL, set to the current URL if not included
+     * @param {string} [baseURL] - The Tau URL, set to the current URL if not included
      * @returns {string}
      */
     generateStateUrl(includeRecipe, includeInput, input, recipeConfig, baseURL) {

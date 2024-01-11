@@ -3,7 +3,7 @@ import OperationConfig from "../../core/config/OperationConfig.json" assert {typ
 
 
 /**
- * Generates an XML sitemap for all CyberChef operations and a number of recipes.
+ * Generates an XML sitemap for all Tau operations and a number of recipes.
  *
  * @author n1474335 [n1474335@gmail.com]
  * @copyright Crown Copyright 2018

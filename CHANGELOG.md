@@ -2,13 +2,13 @@
 
 ## Versioning
 
-CyberChef uses the [semver](https://semver.org/) system to manage versioning: `<MAJOR>.<MINOR>.<PATCH>`.
+Tau uses the [semver](https://semver.org/) system to manage versioning: `<MAJOR>.<MINOR>.<PATCH>`.
 
-- MAJOR version changes represent a significant change to the fundamental architecture of CyberChef and may (but don't always) make breaking changes that are not backwards compatible.
+- MAJOR version changes represent a significant change to the fundamental architecture of Tau and may (but don't always) make breaking changes that are not backwards compatible.
 - MINOR version changes usually mean the addition of new operations or reasonably significant new features.
 - PATCH versions are used for bug fixes and any other small tweaks that modify or improve existing capabilities.
 
-All major and minor version changes will be documented in this file. Details of patch-level version changes can be found in [commit messages](https://github.com/gchq/CyberChef/commits/master).
+All major and minor version changes will be documented in this file. Details of patch-level version changes can be found in [commit messages](https://github.com/gchq/Tau/commits/master).
 
 
 ## Details
@@ -30,7 +30,7 @@ All major and minor version changes will be documented in this file. Details of 
 - Added 'Swap case' operation [@mikecat] | [#1499]
 
 ## [10.0.0] - 2023-03-22
-- [Full details explained here](https://github.com/gchq/CyberChef/wiki/Character-encoding,-EOL-separators,-and-editor-features)
+- [Full details explained here](https://github.com/gchq/Tau/wiki/Character-encoding,-EOL-separators,-and-editor-features)
 - Status bars added to the Input and Output [@n1474335] | [#1405]
 - Character encoding selection added to the Input and Output [@n1474335] | [#1405]
 - End of line separator selection added to the Input and Output [@n1474335] | [#1405]
@@ -154,7 +154,7 @@ All major and minor version changes will be documented in this file. Details of 
 - 'Parse ObjectID Timestamp' operation added [@dmfj] | [#987]
 
 ### [9.19.0] - 2020-03-24
-- Improvements to the 'Magic' operation, allowing it to recognise more data formats and provide more accurate results [@n1073645] [@n1474335] | [#966] [b765534b](https://github.com/gchq/CyberChef/commit/b765534b8b2a0454a5132a0a52d1d8844bcbdaaa)
+- Improvements to the 'Magic' operation, allowing it to recognise more data formats and provide more accurate results [@n1073645] [@n1474335] | [#966] [b765534b](https://github.com/gchq/Tau/commit/b765534b8b2a0454a5132a0a52d1d8844bcbdaaa)
 
 ### [9.18.0] - 2020-03-13
 - 'Convert to NATO alphabet' operation added [@MarvinJWendt] | [#674]
@@ -214,9 +214,9 @@ All major and minor version changes will be documented in this file. Details of 
 </details>
 
 ## [9.0.0] - 2019-07-09
-- [Multiple inputs](https://github.com/gchq/CyberChef/wiki/Multiple-Inputs) are now supported in the main web UI, allowing you to upload and process multiple files at once [@j433866] | [#566]
-- A [Node.js API](https://github.com/gchq/CyberChef/wiki/Node-API) has been implemented, meaning that CyberChef can now be used as a library, either to provide specific operations, or an entire baking environment [@d98762625] | [#291]
-- A [read-eval-print loop (REPL)](https://github.com/gchq/CyberChef/wiki/Node-API#repl) is also included to enable prototyping and experimentation with the API [@d98762625] | [#291]
+- [Multiple inputs](https://github.com/gchq/Tau/wiki/Multiple-Inputs) are now supported in the main web UI, allowing you to upload and process multiple files at once [@j433866] | [#566]
+- A [Node.js API](https://github.com/gchq/Tau/wiki/Node-API) has been implemented, meaning that Tau can now be used as a library, either to provide specific operations, or an entire baking environment [@d98762625] | [#291]
+- A [read-eval-print loop (REPL)](https://github.com/gchq/Tau/wiki/Node-API#repl) is also included to enable prototyping and experimentation with the API [@d98762625] | [#291]
 - Light and dark Solarized themes added [@j433866] | [#566]
 
 <details>
@@ -245,7 +245,7 @@ All major and minor version changes will be documented in this file. Details of 
 - 'Index of Coincidence' operation added [@Ge0rg3] | [#571]
 
 ### [8.31.0] - 2019-04-12
-- The downloadable version of CyberChef is now a .zip file containing separate modules rather than a single .htm file. It is still completely standalone and will not make any external network requests. This change reduces the complexity of the build process significantly. [@n1474335]
+- The downloadable version of Tau is now a .zip file containing separate modules rather than a single .htm file. It is still completely standalone and will not make any external network requests. This change reduces the complexity of the build process significantly. [@n1474335]
 
 ### [8.30.0] - 2019-04-12
 - 'Decode Protobuf' operation added [@n1474335] | [#533]
@@ -258,7 +258,7 @@ All major and minor version changes will be documented in this file. Details of 
 
 ### [8.27.0] - 2019-03-14
 - 'Enigma', 'Typex', 'Bombe' and 'Multiple Bombe' operations added [@s2224834] | [#516]
-- See [this wiki article](https://github.com/gchq/CyberChef/wiki/Enigma,-the-Bombe,-and-Typex) for a full explanation of these operations.
+- See [this wiki article](https://github.com/gchq/Tau/wiki/Enigma,-the-Bombe,-and-Typex) for a full explanation of these operations.
 - New Bombe-style loading animation added for long-running operations [@n1474335]
 - New operation argument types added: `populateMultiOption` and `argSelector` [@n1474335]
 
@@ -349,7 +349,7 @@ All major and minor version changes will be documented in this file. Details of 
 - Codebase rewritten using [ES modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) and [classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) [@n1474335] [@d98762625] [@artemisbot] [@picapi] | [#284]
 - Operation architecture restructured to make adding new operations a lot simpler [@n1474335] | [#284]
 - A script has been added to aid in the creation of new operations by running `npm run newop` [@n1474335] | [#284]
-- 'Magic' operation added - [automated detection of encoded data](https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic) [@n1474335] | [#239]
+- 'Magic' operation added - [automated detection of encoded data](https://github.com/gchq/Tau/wiki/Automatic-detection-of-encoded-data-using-Tau-Magic) [@n1474335] | [#239]
 - UI updated to use [Bootstrap Material Design](https://fezvrasta.github.io/bootstrap-material-design/) [@n1474335] | [#248]
 - `JSON`, `File` and `List<File>` Dish types added [@n1474335] | [#284]
 - `OperationError` type added for better handling of errors thrown by operations [@d98762625] | [#296]
@@ -370,116 +370,116 @@ All major and minor version changes will be documented in this file. Details of 
 -  Webpack build process configured with Babel transpilation and ES6 imports and exports [@n1474335] | [#95]
 
 ## [4.0.0] - 2016-11-28
--  Initial open source commit [@n1474335] | [b1d73a72](https://github.com/gchq/CyberChef/commit/b1d73a725dc7ab9fb7eb789296efd2b7e4b08306)
+-  Initial open source commit [@n1474335] | [b1d73a72](https://github.com/gchq/Tau/commit/b1d73a725dc7ab9fb7eb789296efd2b7e4b08306)
 
 
 
-[10.5.0]: https://github.com/gchq/CyberChef/releases/tag/v10.5.0
-[10.4.0]: https://github.com/gchq/CyberChef/releases/tag/v10.4.0
-[10.3.0]: https://github.com/gchq/CyberChef/releases/tag/v10.3.0
-[10.2.0]: https://github.com/gchq/CyberChef/releases/tag/v10.2.0
-[10.1.0]: https://github.com/gchq/CyberChef/releases/tag/v10.1.0
-[10.0.0]: https://github.com/gchq/CyberChef/releases/tag/v10.0.0
-[9.55.0]: https://github.com/gchq/CyberChef/releases/tag/v9.55.0
-[9.54.0]: https://github.com/gchq/CyberChef/releases/tag/v9.54.0
-[9.53.0]: https://github.com/gchq/CyberChef/releases/tag/v9.53.0
-[9.52.0]: https://github.com/gchq/CyberChef/releases/tag/v9.52.0
-[9.51.0]: https://github.com/gchq/CyberChef/releases/tag/v9.51.0
-[9.50.0]: https://github.com/gchq/CyberChef/releases/tag/v9.50.0
-[9.49.0]: https://github.com/gchq/CyberChef/releases/tag/v9.49.0
-[9.48.0]: https://github.com/gchq/CyberChef/releases/tag/v9.48.0
-[9.47.0]: https://github.com/gchq/CyberChef/releases/tag/v9.47.0
-[9.46.0]: https://github.com/gchq/CyberChef/releases/tag/v9.46.0
-[9.45.0]: https://github.com/gchq/CyberChef/releases/tag/v9.45.0
-[9.44.0]: https://github.com/gchq/CyberChef/releases/tag/v9.44.0
-[9.43.0]: https://github.com/gchq/CyberChef/releases/tag/v9.43.0
-[9.42.0]: https://github.com/gchq/CyberChef/releases/tag/v9.42.0
-[9.41.0]: https://github.com/gchq/CyberChef/releases/tag/v9.41.0
-[9.40.0]: https://github.com/gchq/CyberChef/releases/tag/v9.40.0
-[9.39.0]: https://github.com/gchq/CyberChef/releases/tag/v9.39.0
-[9.38.0]: https://github.com/gchq/CyberChef/releases/tag/v9.38.0
-[9.37.0]: https://github.com/gchq/CyberChef/releases/tag/v9.37.0
-[9.36.0]: https://github.com/gchq/CyberChef/releases/tag/v9.36.0
-[9.35.0]: https://github.com/gchq/CyberChef/releases/tag/v9.35.0
-[9.34.0]: https://github.com/gchq/CyberChef/releases/tag/v9.34.0
-[9.33.0]: https://github.com/gchq/CyberChef/releases/tag/v9.33.0
-[9.32.0]: https://github.com/gchq/CyberChef/releases/tag/v9.32.0
-[9.31.0]: https://github.com/gchq/CyberChef/releases/tag/v9.31.0
-[9.30.0]: https://github.com/gchq/CyberChef/releases/tag/v9.30.0
-[9.29.0]: https://github.com/gchq/CyberChef/releases/tag/v9.29.0
-[9.28.0]: https://github.com/gchq/CyberChef/releases/tag/v9.28.0
-[9.27.0]: https://github.com/gchq/CyberChef/releases/tag/v9.27.0
-[9.26.0]: https://github.com/gchq/CyberChef/releases/tag/v9.26.0
-[9.25.0]: https://github.com/gchq/CyberChef/releases/tag/v9.25.0
-[9.24.0]: https://github.com/gchq/CyberChef/releases/tag/v9.24.0
-[9.23.0]: https://github.com/gchq/CyberChef/releases/tag/v9.23.0
-[9.22.0]: https://github.com/gchq/CyberChef/releases/tag/v9.22.0
-[9.21.0]: https://github.com/gchq/CyberChef/releases/tag/v9.21.0
-[9.20.0]: https://github.com/gchq/CyberChef/releases/tag/v9.20.0
-[9.19.0]: https://github.com/gchq/CyberChef/releases/tag/v9.19.0
-[9.18.0]: https://github.com/gchq/CyberChef/releases/tag/v9.18.0
-[9.17.0]: https://github.com/gchq/CyberChef/releases/tag/v9.17.0
-[9.16.0]: https://github.com/gchq/CyberChef/releases/tag/v9.16.0
-[9.15.0]: https://github.com/gchq/CyberChef/releases/tag/v9.15.0
-[9.14.0]: https://github.com/gchq/CyberChef/releases/tag/v9.14.0
-[9.13.0]: https://github.com/gchq/CyberChef/releases/tag/v9.13.0
-[9.12.0]: https://github.com/gchq/CyberChef/releases/tag/v9.12.0
-[9.11.0]: https://github.com/gchq/CyberChef/releases/tag/v9.11.0
-[9.10.0]: https://github.com/gchq/CyberChef/releases/tag/v9.10.0
-[9.9.0]: https://github.com/gchq/CyberChef/releases/tag/v9.9.0
-[9.8.0]: https://github.com/gchq/CyberChef/releases/tag/v9.8.0
-[9.7.0]: https://github.com/gchq/CyberChef/releases/tag/v9.7.0
-[9.6.0]: https://github.com/gchq/CyberChef/releases/tag/v9.6.0
-[9.5.0]: https://github.com/gchq/CyberChef/releases/tag/v9.5.0
-[9.4.0]: https://github.com/gchq/CyberChef/releases/tag/v9.4.0
-[9.3.0]: https://github.com/gchq/CyberChef/releases/tag/v9.3.0
-[9.2.0]: https://github.com/gchq/CyberChef/releases/tag/v9.2.0
-[9.1.0]: https://github.com/gchq/CyberChef/releases/tag/v9.1.0
-[9.0.0]: https://github.com/gchq/CyberChef/releases/tag/v9.0.0
-[8.38.0]: https://github.com/gchq/CyberChef/releases/tag/v8.38.0
-[8.37.0]: https://github.com/gchq/CyberChef/releases/tag/v8.37.0
-[8.36.0]: https://github.com/gchq/CyberChef/releases/tag/v8.36.0
-[8.35.0]: https://github.com/gchq/CyberChef/releases/tag/v8.35.0
-[8.34.0]: https://github.com/gchq/CyberChef/releases/tag/v8.34.0
-[8.33.0]: https://github.com/gchq/CyberChef/releases/tag/v8.33.0
-[8.32.0]: https://github.com/gchq/CyberChef/releases/tag/v8.32.0
-[8.31.0]: https://github.com/gchq/CyberChef/releases/tag/v8.31.0
-[8.30.0]: https://github.com/gchq/CyberChef/releases/tag/v8.30.0
-[8.29.0]: https://github.com/gchq/CyberChef/releases/tag/v8.29.0
-[8.28.0]: https://github.com/gchq/CyberChef/releases/tag/v8.28.0
-[8.27.0]: https://github.com/gchq/CyberChef/releases/tag/v8.27.0
-[8.26.0]: https://github.com/gchq/CyberChef/releases/tag/v8.26.0
-[8.25.0]: https://github.com/gchq/CyberChef/releases/tag/v8.25.0
-[8.24.0]: https://github.com/gchq/CyberChef/releases/tag/v8.24.0
-[8.23.1]: https://github.com/gchq/CyberChef/releases/tag/v8.23.1
-[8.23.0]: https://github.com/gchq/CyberChef/releases/tag/v8.23.0
-[8.22.0]: https://github.com/gchq/CyberChef/releases/tag/v8.22.0
-[8.21.0]: https://github.com/gchq/CyberChef/releases/tag/v8.21.0
-[8.20.0]: https://github.com/gchq/CyberChef/releases/tag/v8.20.0
-[8.19.0]: https://github.com/gchq/CyberChef/releases/tag/v8.19.0
-[8.18.0]: https://github.com/gchq/CyberChef/releases/tag/v8.18.0
-[8.17.0]: https://github.com/gchq/CyberChef/releases/tag/v8.17.0
-[8.16.0]: https://github.com/gchq/CyberChef/releases/tag/v8.16.0
-[8.15.0]: https://github.com/gchq/CyberChef/releases/tag/v8.15.0
-[8.14.0]: https://github.com/gchq/CyberChef/releases/tag/v8.14.0
-[8.13.0]: https://github.com/gchq/CyberChef/releases/tag/v8.13.0
-[8.12.0]: https://github.com/gchq/CyberChef/releases/tag/v8.12.0
-[8.11.0]: https://github.com/gchq/CyberChef/releases/tag/v8.11.0
-[8.10.0]: https://github.com/gchq/CyberChef/releases/tag/v8.10.0
-[8.9.0]: https://github.com/gchq/CyberChef/releases/tag/v8.9.0
-[8.8.0]: https://github.com/gchq/CyberChef/releases/tag/v8.8.0
-[8.7.0]: https://github.com/gchq/CyberChef/releases/tag/v8.7.0
-[8.6.0]: https://github.com/gchq/CyberChef/releases/tag/v8.6.0
-[8.5.0]: https://github.com/gchq/CyberChef/releases/tag/v8.5.0
-[8.4.0]: https://github.com/gchq/CyberChef/releases/tag/v8.4.0
-[8.3.0]: https://github.com/gchq/CyberChef/releases/tag/v8.3.0
-[8.2.0]: https://github.com/gchq/CyberChef/releases/tag/v8.2.0
-[8.1.0]: https://github.com/gchq/CyberChef/releases/tag/v8.1.0
-[8.0.0]: https://github.com/gchq/CyberChef/releases/tag/v8.0.0
-[7.0.0]: https://github.com/gchq/CyberChef/releases/tag/v7.0.0
-[6.0.0]: https://github.com/gchq/CyberChef/releases/tag/v6.0.0
-[5.0.0]: https://github.com/gchq/CyberChef/releases/tag/v5.0.0
-[4.0.0]: https://github.com/gchq/CyberChef/commit/b1d73a725dc7ab9fb7eb789296efd2b7e4b08306
+[10.5.0]: https://github.com/gchq/Tau/releases/tag/v10.5.0
+[10.4.0]: https://github.com/gchq/Tau/releases/tag/v10.4.0
+[10.3.0]: https://github.com/gchq/Tau/releases/tag/v10.3.0
+[10.2.0]: https://github.com/gchq/Tau/releases/tag/v10.2.0
+[10.1.0]: https://github.com/gchq/Tau/releases/tag/v10.1.0
+[10.0.0]: https://github.com/gchq/Tau/releases/tag/v10.0.0
+[9.55.0]: https://github.com/gchq/Tau/releases/tag/v9.55.0
+[9.54.0]: https://github.com/gchq/Tau/releases/tag/v9.54.0
+[9.53.0]: https://github.com/gchq/Tau/releases/tag/v9.53.0
+[9.52.0]: https://github.com/gchq/Tau/releases/tag/v9.52.0
+[9.51.0]: https://github.com/gchq/Tau/releases/tag/v9.51.0
+[9.50.0]: https://github.com/gchq/Tau/releases/tag/v9.50.0
+[9.49.0]: https://github.com/gchq/Tau/releases/tag/v9.49.0
+[9.48.0]: https://github.com/gchq/Tau/releases/tag/v9.48.0
+[9.47.0]: https://github.com/gchq/Tau/releases/tag/v9.47.0
+[9.46.0]: https://github.com/gchq/Tau/releases/tag/v9.46.0
+[9.45.0]: https://github.com/gchq/Tau/releases/tag/v9.45.0
+[9.44.0]: https://github.com/gchq/Tau/releases/tag/v9.44.0
+[9.43.0]: https://github.com/gchq/Tau/releases/tag/v9.43.0
+[9.42.0]: https://github.com/gchq/Tau/releases/tag/v9.42.0
+[9.41.0]: https://github.com/gchq/Tau/releases/tag/v9.41.0
+[9.40.0]: https://github.com/gchq/Tau/releases/tag/v9.40.0
+[9.39.0]: https://github.com/gchq/Tau/releases/tag/v9.39.0
+[9.38.0]: https://github.com/gchq/Tau/releases/tag/v9.38.0
+[9.37.0]: https://github.com/gchq/Tau/releases/tag/v9.37.0
+[9.36.0]: https://github.com/gchq/Tau/releases/tag/v9.36.0
+[9.35.0]: https://github.com/gchq/Tau/releases/tag/v9.35.0
+[9.34.0]: https://github.com/gchq/Tau/releases/tag/v9.34.0
+[9.33.0]: https://github.com/gchq/Tau/releases/tag/v9.33.0
+[9.32.0]: https://github.com/gchq/Tau/releases/tag/v9.32.0
+[9.31.0]: https://github.com/gchq/Tau/releases/tag/v9.31.0
+[9.30.0]: https://github.com/gchq/Tau/releases/tag/v9.30.0
+[9.29.0]: https://github.com/gchq/Tau/releases/tag/v9.29.0
+[9.28.0]: https://github.com/gchq/Tau/releases/tag/v9.28.0
+[9.27.0]: https://github.com/gchq/Tau/releases/tag/v9.27.0
+[9.26.0]: https://github.com/gchq/Tau/releases/tag/v9.26.0
+[9.25.0]: https://github.com/gchq/Tau/releases/tag/v9.25.0
+[9.24.0]: https://github.com/gchq/Tau/releases/tag/v9.24.0
+[9.23.0]: https://github.com/gchq/Tau/releases/tag/v9.23.0
+[9.22.0]: https://github.com/gchq/Tau/releases/tag/v9.22.0
+[9.21.0]: https://github.com/gchq/Tau/releases/tag/v9.21.0
+[9.20.0]: https://github.com/gchq/Tau/releases/tag/v9.20.0
+[9.19.0]: https://github.com/gchq/Tau/releases/tag/v9.19.0
+[9.18.0]: https://github.com/gchq/Tau/releases/tag/v9.18.0
+[9.17.0]: https://github.com/gchq/Tau/releases/tag/v9.17.0
+[9.16.0]: https://github.com/gchq/Tau/releases/tag/v9.16.0
+[9.15.0]: https://github.com/gchq/Tau/releases/tag/v9.15.0
+[9.14.0]: https://github.com/gchq/Tau/releases/tag/v9.14.0
+[9.13.0]: https://github.com/gchq/Tau/releases/tag/v9.13.0
+[9.12.0]: https://github.com/gchq/Tau/releases/tag/v9.12.0
+[9.11.0]: https://github.com/gchq/Tau/releases/tag/v9.11.0
+[9.10.0]: https://github.com/gchq/Tau/releases/tag/v9.10.0
+[9.9.0]: https://github.com/gchq/Tau/releases/tag/v9.9.0
+[9.8.0]: https://github.com/gchq/Tau/releases/tag/v9.8.0
+[9.7.0]: https://github.com/gchq/Tau/releases/tag/v9.7.0
+[9.6.0]: https://github.com/gchq/Tau/releases/tag/v9.6.0
+[9.5.0]: https://github.com/gchq/Tau/releases/tag/v9.5.0
+[9.4.0]: https://github.com/gchq/Tau/releases/tag/v9.4.0
+[9.3.0]: https://github.com/gchq/Tau/releases/tag/v9.3.0
+[9.2.0]: https://github.com/gchq/Tau/releases/tag/v9.2.0
+[9.1.0]: https://github.com/gchq/Tau/releases/tag/v9.1.0
+[9.0.0]: https://github.com/gchq/Tau/releases/tag/v9.0.0
+[8.38.0]: https://github.com/gchq/Tau/releases/tag/v8.38.0
+[8.37.0]: https://github.com/gchq/Tau/releases/tag/v8.37.0
+[8.36.0]: https://github.com/gchq/Tau/releases/tag/v8.36.0
+[8.35.0]: https://github.com/gchq/Tau/releases/tag/v8.35.0
+[8.34.0]: https://github.com/gchq/Tau/releases/tag/v8.34.0
+[8.33.0]: https://github.com/gchq/Tau/releases/tag/v8.33.0
+[8.32.0]: https://github.com/gchq/Tau/releases/tag/v8.32.0
+[8.31.0]: https://github.com/gchq/Tau/releases/tag/v8.31.0
+[8.30.0]: https://github.com/gchq/Tau/releases/tag/v8.30.0
+[8.29.0]: https://github.com/gchq/Tau/releases/tag/v8.29.0
+[8.28.0]: https://github.com/gchq/Tau/releases/tag/v8.28.0
+[8.27.0]: https://github.com/gchq/Tau/releases/tag/v8.27.0
+[8.26.0]: https://github.com/gchq/Tau/releases/tag/v8.26.0
+[8.25.0]: https://github.com/gchq/Tau/releases/tag/v8.25.0
+[8.24.0]: https://github.com/gchq/Tau/releases/tag/v8.24.0
+[8.23.1]: https://github.com/gchq/Tau/releases/tag/v8.23.1
+[8.23.0]: https://github.com/gchq/Tau/releases/tag/v8.23.0
+[8.22.0]: https://github.com/gchq/Tau/releases/tag/v8.22.0
+[8.21.0]: https://github.com/gchq/Tau/releases/tag/v8.21.0
+[8.20.0]: https://github.com/gchq/Tau/releases/tag/v8.20.0
+[8.19.0]: https://github.com/gchq/Tau/releases/tag/v8.19.0
+[8.18.0]: https://github.com/gchq/Tau/releases/tag/v8.18.0
+[8.17.0]: https://github.com/gchq/Tau/releases/tag/v8.17.0
+[8.16.0]: https://github.com/gchq/Tau/releases/tag/v8.16.0
+[8.15.0]: https://github.com/gchq/Tau/releases/tag/v8.15.0
+[8.14.0]: https://github.com/gchq/Tau/releases/tag/v8.14.0
+[8.13.0]: https://github.com/gchq/Tau/releases/tag/v8.13.0
+[8.12.0]: https://github.com/gchq/Tau/releases/tag/v8.12.0
+[8.11.0]: https://github.com/gchq/Tau/releases/tag/v8.11.0
+[8.10.0]: https://github.com/gchq/Tau/releases/tag/v8.10.0
+[8.9.0]: https://github.com/gchq/Tau/releases/tag/v8.9.0
+[8.8.0]: https://github.com/gchq/Tau/releases/tag/v8.8.0
+[8.7.0]: https://github.com/gchq/Tau/releases/tag/v8.7.0
+[8.6.0]: https://github.com/gchq/Tau/releases/tag/v8.6.0
+[8.5.0]: https://github.com/gchq/Tau/releases/tag/v8.5.0
+[8.4.0]: https://github.com/gchq/Tau/releases/tag/v8.4.0
+[8.3.0]: https://github.com/gchq/Tau/releases/tag/v8.3.0
+[8.2.0]: https://github.com/gchq/Tau/releases/tag/v8.2.0
+[8.1.0]: https://github.com/gchq/Tau/releases/tag/v8.1.0
+[8.0.0]: https://github.com/gchq/Tau/releases/tag/v8.0.0
+[7.0.0]: https://github.com/gchq/Tau/releases/tag/v7.0.0
+[6.0.0]: https://github.com/gchq/Tau/releases/tag/v6.0.0
+[5.0.0]: https://github.com/gchq/Tau/releases/tag/v5.0.0
+[4.0.0]: https://github.com/gchq/Tau/commit/b1d73a725dc7ab9fb7eb789296efd2b7e4b08306
 
 [@n1474335]: https://github.com/n1474335
 [@d98762625]: https://github.com/d98762625
@@ -529,121 +529,121 @@ All major and minor version changes will be documented in this file. Details of 
 [@Xenonym]: https://github.com/Xenonym
 [@gchq77703]: https://github.com/gchq77703
 
-[8ad18b]: https://github.com/gchq/CyberChef/commit/8ad18bc7db6d9ff184ba3518686293a7685bf7b7
-[9a33498]: https://github.com/gchq/CyberChef/commit/9a33498fed26a8df9c9f35f39a78a174bf50a513
-[289a417]: https://github.com/gchq/CyberChef/commit/289a417dfb5923de5e1694354ec42a08d9395bfe
-[e9ca4dc]: https://github.com/gchq/CyberChef/commit/e9ca4dc9caf98f33fd986431cd400c88082a42b8
-[dd18e52]: https://github.com/gchq/CyberChef/commit/dd18e529939078b89867297b181a584e8b2cc7da
-[a895d1d]: https://github.com/gchq/CyberChef/commit/a895d1d82a2f92d440a0c5eca2bc7c898107b737
-[31a7f83]: https://github.com/gchq/CyberChef/commit/31a7f83b82e78927f89689f323fcb9185144d6ff
-[760eff4]: https://github.com/gchq/CyberChef/commit/760eff49b5307aaa3104c5e5b437ffe62299acd1
+[8ad18b]: https://github.com/gchq/Tau/commit/8ad18bc7db6d9ff184ba3518686293a7685bf7b7
+[9a33498]: https://github.com/gchq/Tau/commit/9a33498fed26a8df9c9f35f39a78a174bf50a513
+[289a417]: https://github.com/gchq/Tau/commit/289a417dfb5923de5e1694354ec42a08d9395bfe
+[e9ca4dc]: https://github.com/gchq/Tau/commit/e9ca4dc9caf98f33fd986431cd400c88082a42b8
+[dd18e52]: https://github.com/gchq/Tau/commit/dd18e529939078b89867297b181a584e8b2cc7da
+[a895d1d]: https://github.com/gchq/Tau/commit/a895d1d82a2f92d440a0c5eca2bc7c898107b737
+[31a7f83]: https://github.com/gchq/Tau/commit/31a7f83b82e78927f89689f323fcb9185144d6ff
+[760eff4]: https://github.com/gchq/Tau/commit/760eff49b5307aaa3104c5e5b437ffe62299acd1
 
-[#95]: https://github.com/gchq/CyberChef/pull/299
-[#173]: https://github.com/gchq/CyberChef/pull/173
-[#143]: https://github.com/gchq/CyberChef/pull/143
-[#224]: https://github.com/gchq/CyberChef/pull/224
-[#239]: https://github.com/gchq/CyberChef/pull/239
-[#248]: https://github.com/gchq/CyberChef/pull/248
-[#255]: https://github.com/gchq/CyberChef/issues/255
-[#277]: https://github.com/gchq/CyberChef/issues/277
-[#281]: https://github.com/gchq/CyberChef/pull/281
-[#284]: https://github.com/gchq/CyberChef/pull/284
-[#291]: https://github.com/gchq/CyberChef/pull/291
-[#294]: https://github.com/gchq/CyberChef/pull/294
-[#296]: https://github.com/gchq/CyberChef/pull/296
-[#298]: https://github.com/gchq/CyberChef/pull/298
-[#311]: https://github.com/gchq/CyberChef/pull/311
-[#325]: https://github.com/gchq/CyberChef/pull/325
-[#338]: https://github.com/gchq/CyberChef/pull/338
-[#340]: https://github.com/gchq/CyberChef/pull/340
-[#344]: https://github.com/gchq/CyberChef/pull/344
-[#348]: https://github.com/gchq/CyberChef/pull/348
-[#351]: https://github.com/gchq/CyberChef/pull/351
-[#387]: https://github.com/gchq/CyberChef/pull/387
-[#394]: https://github.com/gchq/CyberChef/pull/394
-[#428]: https://github.com/gchq/CyberChef/pull/428
-[#439]: https://github.com/gchq/CyberChef/pull/439
-[#440]: https://github.com/gchq/CyberChef/pull/440
-[#441]: https://github.com/gchq/CyberChef/pull/441
-[#443]: https://github.com/gchq/CyberChef/pull/443
-[#446]: https://github.com/gchq/CyberChef/pull/446
-[#448]: https://github.com/gchq/CyberChef/pull/448
-[#449]: https://github.com/gchq/CyberChef/pull/449
-[#455]: https://github.com/gchq/CyberChef/pull/455
-[#458]: https://github.com/gchq/CyberChef/pull/458
-[#461]: https://github.com/gchq/CyberChef/pull/461
-[#467]: https://github.com/gchq/CyberChef/pull/467
-[#468]: https://github.com/gchq/CyberChef/pull/468
-[#476]: https://github.com/gchq/CyberChef/pull/476
-[#477]: https://github.com/gchq/CyberChef/pull/477
-[#489]: https://github.com/gchq/CyberChef/pull/489
-[#496]: https://github.com/gchq/CyberChef/pull/496
-[#500]: https://github.com/gchq/CyberChef/pull/500
-[#506]: https://github.com/gchq/CyberChef/pull/506
-[#515]: https://github.com/gchq/CyberChef/pull/515
-[#516]: https://github.com/gchq/CyberChef/pull/516
-[#525]: https://github.com/gchq/CyberChef/pull/525
-[#528]: https://github.com/gchq/CyberChef/pull/528
-[#530]: https://github.com/gchq/CyberChef/pull/530
-[#531]: https://github.com/gchq/CyberChef/pull/531
-[#533]: https://github.com/gchq/CyberChef/pull/533
-[#535]: https://github.com/gchq/CyberChef/pull/535
-[#556]: https://github.com/gchq/CyberChef/pull/556
-[#566]: https://github.com/gchq/CyberChef/pull/566
-[#571]: https://github.com/gchq/CyberChef/pull/571
-[#585]: https://github.com/gchq/CyberChef/pull/585
-[#591]: https://github.com/gchq/CyberChef/pull/591
-[#595]: https://github.com/gchq/CyberChef/pull/595
-[#614]: https://github.com/gchq/CyberChef/pull/614
-[#625]: https://github.com/gchq/CyberChef/pull/625
-[#627]: https://github.com/gchq/CyberChef/pull/627
-[#632]: https://github.com/gchq/CyberChef/pull/632
-[#652]: https://github.com/gchq/CyberChef/pull/652
-[#653]: https://github.com/gchq/CyberChef/pull/653
-[#674]: https://github.com/gchq/CyberChef/pull/674
-[#683]: https://github.com/gchq/CyberChef/pull/683
-[#865]: https://github.com/gchq/CyberChef/pull/865
-[#906]: https://github.com/gchq/CyberChef/pull/906
-[#912]: https://github.com/gchq/CyberChef/pull/912
-[#917]: https://github.com/gchq/CyberChef/pull/917
-[#934]: https://github.com/gchq/CyberChef/pull/934
-[#948]: https://github.com/gchq/CyberChef/pull/948
-[#951]: https://github.com/gchq/CyberChef/pull/951
-[#952]: https://github.com/gchq/CyberChef/pull/952
-[#965]: https://github.com/gchq/CyberChef/pull/965
-[#966]: https://github.com/gchq/CyberChef/pull/966
-[#987]: https://github.com/gchq/CyberChef/pull/987
-[#999]: https://github.com/gchq/CyberChef/pull/999
-[#1006]: https://github.com/gchq/CyberChef/pull/1006
-[#1022]: https://github.com/gchq/CyberChef/pull/1022
-[#1037]: https://github.com/gchq/CyberChef/pull/1037
-[#1045]: https://github.com/gchq/CyberChef/pull/1045
-[#1049]: https://github.com/gchq/CyberChef/pull/1049
-[#1065]: https://github.com/gchq/CyberChef/pull/1065
-[#1066]: https://github.com/gchq/CyberChef/pull/1066
-[#1083]: https://github.com/gchq/CyberChef/pull/1083
-[#1189]: https://github.com/gchq/CyberChef/pull/1189
-[#1242]: https://github.com/gchq/CyberChef/pull/1242
-[#1244]: https://github.com/gchq/CyberChef/pull/1244
-[#1313]: https://github.com/gchq/CyberChef/pull/1313
-[#1326]: https://github.com/gchq/CyberChef/pull/1326
-[#1364]: https://github.com/gchq/CyberChef/pull/1364
-[#1264]: https://github.com/gchq/CyberChef/pull/1264
-[#1266]: https://github.com/gchq/CyberChef/pull/1266
-[#1250]: https://github.com/gchq/CyberChef/pull/1250
-[#1308]: https://github.com/gchq/CyberChef/pull/1308
-[#1405]: https://github.com/gchq/CyberChef/pull/1405
-[#1421]: https://github.com/gchq/CyberChef/pull/1421
-[#1427]: https://github.com/gchq/CyberChef/pull/1427
-[#1472]: https://github.com/gchq/CyberChef/pull/1472
-[#1457]: https://github.com/gchq/CyberChef/pull/1457
-[#1466]: https://github.com/gchq/CyberChef/pull/1466
-[#1456]: https://github.com/gchq/CyberChef/pull/1456
-[#1450]: https://github.com/gchq/CyberChef/pull/1450
-[#1498]: https://github.com/gchq/CyberChef/pull/1498
-[#1499]: https://github.com/gchq/CyberChef/pull/1499
-[#1528]: https://github.com/gchq/CyberChef/pull/1528
-[#661]: https://github.com/gchq/CyberChef/pull/661
-[#493]: https://github.com/gchq/CyberChef/pull/493
-[#592]: https://github.com/gchq/CyberChef/issues/592
+[#95]: https://github.com/gchq/Tau/pull/299
+[#173]: https://github.com/gchq/Tau/pull/173
+[#143]: https://github.com/gchq/Tau/pull/143
+[#224]: https://github.com/gchq/Tau/pull/224
+[#239]: https://github.com/gchq/Tau/pull/239
+[#248]: https://github.com/gchq/Tau/pull/248
+[#255]: https://github.com/gchq/Tau/issues/255
+[#277]: https://github.com/gchq/Tau/issues/277
+[#281]: https://github.com/gchq/Tau/pull/281
+[#284]: https://github.com/gchq/Tau/pull/284
+[#291]: https://github.com/gchq/Tau/pull/291
+[#294]: https://github.com/gchq/Tau/pull/294
+[#296]: https://github.com/gchq/Tau/pull/296
+[#298]: https://github.com/gchq/Tau/pull/298
+[#311]: https://github.com/gchq/Tau/pull/311
+[#325]: https://github.com/gchq/Tau/pull/325
+[#338]: https://github.com/gchq/Tau/pull/338
+[#340]: https://github.com/gchq/Tau/pull/340
+[#344]: https://github.com/gchq/Tau/pull/344
+[#348]: https://github.com/gchq/Tau/pull/348
+[#351]: https://github.com/gchq/Tau/pull/351
+[#387]: https://github.com/gchq/Tau/pull/387
+[#394]: https://github.com/gchq/Tau/pull/394
+[#428]: https://github.com/gchq/Tau/pull/428
+[#439]: https://github.com/gchq/Tau/pull/439
+[#440]: https://github.com/gchq/Tau/pull/440
+[#441]: https://github.com/gchq/Tau/pull/441
+[#443]: https://github.com/gchq/Tau/pull/443
+[#446]: https://github.com/gchq/Tau/pull/446
+[#448]: https://github.com/gchq/Tau/pull/448
+[#449]: https://github.com/gchq/Tau/pull/449
+[#455]: https://github.com/gchq/Tau/pull/455
+[#458]: https://github.com/gchq/Tau/pull/458
+[#461]: https://github.com/gchq/Tau/pull/461
+[#467]: https://github.com/gchq/Tau/pull/467
+[#468]: https://github.com/gchq/Tau/pull/468
+[#476]: https://github.com/gchq/Tau/pull/476
+[#477]: https://github.com/gchq/Tau/pull/477
+[#489]: https://github.com/gchq/Tau/pull/489
+[#496]: https://github.com/gchq/Tau/pull/496
+[#500]: https://github.com/gchq/Tau/pull/500
+[#506]: https://github.com/gchq/Tau/pull/506
+[#515]: https://github.com/gchq/Tau/pull/515
+[#516]: https://github.com/gchq/Tau/pull/516
+[#525]: https://github.com/gchq/Tau/pull/525
+[#528]: https://github.com/gchq/Tau/pull/528
+[#530]: https://github.com/gchq/Tau/pull/530
+[#531]: https://github.com/gchq/Tau/pull/531
+[#533]: https://github.com/gchq/Tau/pull/533
+[#535]: https://github.com/gchq/Tau/pull/535
+[#556]: https://github.com/gchq/Tau/pull/556
+[#566]: https://github.com/gchq/Tau/pull/566
+[#571]: https://github.com/gchq/Tau/pull/571
+[#585]: https://github.com/gchq/Tau/pull/585
+[#591]: https://github.com/gchq/Tau/pull/591
+[#595]: https://github.com/gchq/Tau/pull/595
+[#614]: https://github.com/gchq/Tau/pull/614
+[#625]: https://github.com/gchq/Tau/pull/625
+[#627]: https://github.com/gchq/Tau/pull/627
+[#632]: https://github.com/gchq/Tau/pull/632
+[#652]: https://github.com/gchq/Tau/pull/652
+[#653]: https://github.com/gchq/Tau/pull/653
+[#674]: https://github.com/gchq/Tau/pull/674
+[#683]: https://github.com/gchq/Tau/pull/683
+[#865]: https://github.com/gchq/Tau/pull/865
+[#906]: https://github.com/gchq/Tau/pull/906
+[#912]: https://github.com/gchq/Tau/pull/912
+[#917]: https://github.com/gchq/Tau/pull/917
+[#934]: https://github.com/gchq/Tau/pull/934
+[#948]: https://github.com/gchq/Tau/pull/948
+[#951]: https://github.com/gchq/Tau/pull/951
+[#952]: https://github.com/gchq/Tau/pull/952
+[#965]: https://github.com/gchq/Tau/pull/965
+[#966]: https://github.com/gchq/Tau/pull/966
+[#987]: https://github.com/gchq/Tau/pull/987
+[#999]: https://github.com/gchq/Tau/pull/999
+[#1006]: https://github.com/gchq/Tau/pull/1006
+[#1022]: https://github.com/gchq/Tau/pull/1022
+[#1037]: https://github.com/gchq/Tau/pull/1037
+[#1045]: https://github.com/gchq/Tau/pull/1045
+[#1049]: https://github.com/gchq/Tau/pull/1049
+[#1065]: https://github.com/gchq/Tau/pull/1065
+[#1066]: https://github.com/gchq/Tau/pull/1066
+[#1083]: https://github.com/gchq/Tau/pull/1083
+[#1189]: https://github.com/gchq/Tau/pull/1189
+[#1242]: https://github.com/gchq/Tau/pull/1242
+[#1244]: https://github.com/gchq/Tau/pull/1244
+[#1313]: https://github.com/gchq/Tau/pull/1313
+[#1326]: https://github.com/gchq/Tau/pull/1326
+[#1364]: https://github.com/gchq/Tau/pull/1364
+[#1264]: https://github.com/gchq/Tau/pull/1264
+[#1266]: https://github.com/gchq/Tau/pull/1266
+[#1250]: https://github.com/gchq/Tau/pull/1250
+[#1308]: https://github.com/gchq/Tau/pull/1308
+[#1405]: https://github.com/gchq/Tau/pull/1405
+[#1421]: https://github.com/gchq/Tau/pull/1421
+[#1427]: https://github.com/gchq/Tau/pull/1427
+[#1472]: https://github.com/gchq/Tau/pull/1472
+[#1457]: https://github.com/gchq/Tau/pull/1457
+[#1466]: https://github.com/gchq/Tau/pull/1466
+[#1456]: https://github.com/gchq/Tau/pull/1456
+[#1450]: https://github.com/gchq/Tau/pull/1450
+[#1498]: https://github.com/gchq/Tau/pull/1498
+[#1499]: https://github.com/gchq/Tau/pull/1499
+[#1528]: https://github.com/gchq/Tau/pull/1528
+[#661]: https://github.com/gchq/Tau/pull/661
+[#493]: https://github.com/gchq/Tau/pull/493
+[#592]: https://github.com/gchq/Tau/issues/592
 

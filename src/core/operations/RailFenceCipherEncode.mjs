@@ -1,5 +1,5 @@
 /**
- * @author Flavio Diez [flaviofdiez+cyberchef@gmail.com]
+ * @author Flavio Diez [flaviofdiez+tau@gmail.com]
  * @copyright Crown Copyright 2020
  * @license Apache-2.0
  */

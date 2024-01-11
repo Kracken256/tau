@@ -49,8 +49,8 @@ class OutputWaiter {
     /**
      * OutputWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager
+     * @param {App} app - The main view object for Tau.
+     * @param {Manager} manager - The Tau event manager
      */
     constructor(app, manager) {
         this.app = app;

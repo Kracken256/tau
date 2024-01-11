@@ -3,17 +3,17 @@
         "@context": "http://schema.org",
         "@type": "Organization",
         "url": "https://gchq.github.io/CyberChef/",
-        "logo": "https://gchq.github.io/CyberChef/images/cyberchef-128x128.png",
+        "logo": "https://gchq.github.io/CyberChef/images/tau-128x128.png",
         "sameAs": [
-            "https://github.com/gchq/CyberChef",
-            "https://www.npmjs.com/package/cyberchef"
+            "https://github.com/gchq/Tau",
+            "https://www.npmjs.com/package/tau"
         ]
     },
     {
         "@context": "http://schema.org",
         "@type": "WebSite",
         "url": "https://gchq.github.io/CyberChef/",
-        "name": "CyberChef",
+        "name": "Tau",
         "potentialAction": {
             "@type": "SearchAction",
             "target": "https://gchq.github.io/CyberChef/?op={operation_search_term}",

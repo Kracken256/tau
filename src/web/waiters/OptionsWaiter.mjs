@@ -5,15 +5,15 @@
  */
 
 /**
- * Waiter to handle events related to the CyberChef options.
+ * Waiter to handle events related to the Tau options.
  */
 class OptionsWaiter {
 
     /**
      * OptionsWaiter constructor.
      *
-     * @param {App} app - The main view object for CyberChef.
-     * @param {Manager} manager - The CyberChef event manager.
+     * @param {App} app - The main view object for Tau.
+     * @param {Manager} manager - The Tau event manager.
      */
     constructor(app, manager) {
         this.app = app;
